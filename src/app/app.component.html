@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<ul>
+  <li *ngFor="let menu of menuList">
+    <a routerLink="{{ menu.href }}">{{ menu.text }}</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
