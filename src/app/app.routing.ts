@@ -3,25 +3,30 @@ import { Routes, RouterModule } from '@angular/router';
 import { TopComponent } from './top/top.component';
 import { Hero1Component } from './hero1/hero1.component';
 import { Hero2Component } from './hero2/hero2.component';
+import { Hero3Component } from './hero3/hero3.component';
 
 const appRoutes: Routes = [
-    {
-        path: '',
-        component: TopComponent
-    },
-    {
-        path: 'hero1',
-        redirectTo: '/',
-        pathMatch: 'full'
-    },
-    {
-        path: 'hero2',
-        component: Hero1Component
-    },
-    {
-        path: 'hero3',
-        component: Hero2Component
-    },
+  {
+    path: '',
+    component: TopComponent
+  },
+  {
+    path: 'hero1',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
+  {
+    path: 'hero2',
+    component: Hero1Component
+  },
+  {
+    path: 'hero3',
+    component: Hero2Component
+  },
+  {
+    path: 'hero4',
+    component: Hero3Component
+  },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
