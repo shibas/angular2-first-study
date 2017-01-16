@@ -3,7 +3,7 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'hero4',
+  selector: 'app-hero4',
   templateUrl: './hero4.component.html',
   styleUrls: ['./hero4.component.css'],
   providers: [HeroService]

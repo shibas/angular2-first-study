@@ -6,7 +6,7 @@ export class Hero {
 }
 
 @Component({
-  selector: 'hero1',
+  selector: 'app-hero1',
   templateUrl: './hero1.component.html',
   styleUrls: ['./hero1.component.css']
 })
