@@ -5,22 +5,27 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { Hero1Component } from './hero1/hero1.component';
 import { TopComponent } from './top/top.component';
+import { Hero1Component } from './hero1/hero1.component';
 import { Hero2Component } from './hero2/hero2.component';
 import { Hero3Component } from './hero3/hero3.component';
-import { HeroDetailComponent } from './hero3/components/hero-detail/hero-detail.component';
 import { Hero4Component } from './hero4/hero4.component';
+import { Hero5Component } from './hero5/hero5.component';
+import { HeroDetailComponent } from './hero3/components/hero-detail/hero-detail.component';
+import { HeroesComponent } from './hero5/heroes.component';
+import { HeroService } from './hero5/hero.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Hero1Component,
     TopComponent,
+    Hero1Component,
     Hero2Component,
     Hero3Component,
+    Hero4Component,
+    Hero5Component,
     HeroDetailComponent,
-    Hero4Component
+    HeroesComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,7 @@ import { Hero4Component } from './hero4/hero4.component';
     HttpModule,
     routing,
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

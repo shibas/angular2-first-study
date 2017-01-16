@@ -11,6 +11,7 @@ const MENULIST: Menu[] = [
   { href: '/hero3', text: '3.Master/Detail' },
   { href: '/hero4', text: '4.Multiple Components' },
   { href: '/hero5', text: '5.Services' },
+  { href: '/hero6', text: '6.Routing' },
 ];
 
 @Component({
