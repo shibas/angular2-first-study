@@ -10,6 +10,7 @@ import { TopComponent } from './top/top.component';
 import { Hero2Component } from './hero2/hero2.component';
 import { Hero3Component } from './hero3/hero3.component';
 import { HeroDetailComponent } from './hero3/components/hero-detail/hero-detail.component';
+import { Hero4Component } from './hero4/hero4.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroDetailComponent } from './hero3/components/hero-detail/hero-detail.
     TopComponent,
     Hero2Component,
     Hero3Component,
-    HeroDetailComponent
+    HeroDetailComponent,
+    Hero4Component
   ],
   imports: [
     BrowserModule,
