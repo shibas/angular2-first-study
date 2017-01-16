@@ -4,9 +4,11 @@ export class Menu {
   href: string;
   text: string;
 }
+
 const MENULIST: Menu[] = [
   { href: '/hero1', text: '1.Redirect to Top page' },
   { href: '/hero2', text: '2.The Hero Editor' },
+  { href: '/hero3', text: '3.Master/Detail' },
 ];
 
 @Component({

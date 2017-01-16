@@ -2,6 +2,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TopComponent } from './top/top.component';
 import { Hero1Component } from './hero1/hero1.component';
+import { Hero2Component } from './hero2/hero2.component';
 
 const appRoutes: Routes = [
     {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
     {
         path: 'hero2',
         component: Hero1Component
+    },
+    {
+        path: 'hero3',
+        component: Hero2Component
     },
 ];
 

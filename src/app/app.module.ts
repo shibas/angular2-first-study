@@ -7,12 +7,14 @@ import { routing }   from './app.routing';
 import { AppComponent } from './app.component';
 import { Hero1Component } from './hero1/hero1.component';
 import { TopComponent } from './top/top.component';
+import { Hero2Component } from './hero2/hero2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Hero1Component,
-    TopComponent
+    TopComponent,
+    Hero2Component
   ],
   imports: [
     BrowserModule,
