@@ -9,9 +9,9 @@ import { TopComponent } from './top/top.component';
 import { Hero1Component } from './hero1/hero1.component';
 import { Hero2Component } from './hero2/hero2.component';
 import { Hero3Component } from './hero3/hero3.component';
+import { Hero3DetailComponent } from './hero3/components/hero-detail/hero-detail.component';
 import { Hero4Component } from './hero4/hero4.component';
 import { Hero5Component } from './hero5/hero5.component';
-import { HeroDetailComponent } from './hero3/components/hero-detail/hero-detail.component';
 import { HeroesComponent } from './hero5/heroes.component';
 import { HeroService } from './hero5/hero.service';
 
@@ -24,7 +24,7 @@ import { HeroService } from './hero5/hero.service';
     Hero3Component,
     Hero4Component,
     Hero5Component,
-    HeroDetailComponent,
+    Hero3DetailComponent,
     HeroesComponent,
   ],
   imports: [

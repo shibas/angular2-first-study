@@ -7,7 +7,7 @@ import { Hero } from '../../hero';
   styleUrls: ['./hero-detail.component.css']
 })
 
-export class HeroDetailComponent {
+export class Hero3DetailComponent {
   @Input()
   hero: Hero;
 }
