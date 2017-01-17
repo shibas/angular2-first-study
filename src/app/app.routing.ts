@@ -6,6 +6,7 @@ import { Hero2Component } from './hero2/hero2.component';
 import { Hero3Component } from './hero3/hero3.component';
 import { Hero4Component } from './hero4/hero4.component';
 import { Hero5Component } from './hero5/hero5.component';
+import { Hero5DashboardComponent } from './hero5/components/dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   {
@@ -35,6 +36,10 @@ const appRoutes: Routes = [
   },
   {
     path: 'hero6',
+    component: Hero5Component
+  },
+  {
+    path: 'hero6/detail/:id',
     component: Hero5Component
   },
 ];

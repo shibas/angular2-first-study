@@ -4,7 +4,7 @@ import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 
 @Injectable()
-export class HeroService {
+export class Hero5Service {
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
   }
@@ -15,4 +15,9 @@ export class HeroService {
     });
   }
 
+  getHero(id: number): Promise<Hero> {
+    return this.getHeroes()
+            .then(heroes => heroes.find(hero => hero.id === id));
+  
+  }
 }
