@@ -2,13 +2,14 @@ import { Hero } from '../../hero';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
+import { Hero5NavComponent } from '../hero-nav/hero-nav.component';
 
-import { Hero5Service } from '../..//hero.service';
+import { Hero5Service } from '../../hero.service';
 import 'rxjs/add/operator/switchMap';
 
 @Component({
   moduleId: module.id,
-  selector: 'my-hero-detail',
+  selector: 'app-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css']
 })

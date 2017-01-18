@@ -1,14 +1,15 @@
-import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { TopComponent } from './top/top.component';
 import { Hero1Component } from './hero1/hero1.component';
 import { Hero2Component } from './hero2/hero2.component';
 import { Hero3Component } from './hero3/hero3.component';
 import { Hero4Component } from './hero4/hero4.component';
-import { Hero5Component } from './hero5/hero5.component';
 import { Hero5DashboardComponent } from './hero5/components/dashboard/dashboard.component';
+import { Hero5HeroesComponent } from './hero5/components/heroes/heroes.component';
+import { Hero5DetailComponent } from './hero5/components/hero-detail/hero-detail.component';
 
-const appRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
     component: TopComponent
@@ -35,13 +36,26 @@ const appRoutes: Routes = [
     component: Hero4Component
   },
   {
-    path: 'hero6',
-    component: Hero5Component
+    path: 'hero6/detail/:id',
+    component: Hero5DetailComponent
   },
   {
-    path: 'hero6/detail/:id',
-    component: Hero5Component
+    path: 'hero6/heroes',
+    component: Hero5HeroesComponent
+  },
+  {
+    path: 'hero6/dashboard',
+    component: Hero5DashboardComponent
+  },
+  {
+    path: 'hero6',
+    redirectTo: 'hero6/dashboard',
+    pathMatch: 'full'
   },
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}

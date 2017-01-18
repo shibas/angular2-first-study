@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routing';
+import { AppRoutingModule  } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
@@ -15,6 +15,7 @@ import { Hero5Component } from './hero5/hero5.component';
 import { Hero5DetailComponent } from './hero5/components/hero-detail/hero-detail.component';
 import { Hero5DashboardComponent } from './hero5/components/dashboard/dashboard.component';
 import { Hero5HeroesComponent } from './hero5/components/heroes/heroes.component';
+import { Hero5NavComponent } from './hero5/components/hero-nav/hero-nav.component';
 import { Hero5Service } from './hero5/hero.service';
 
 @NgModule({
@@ -30,12 +31,13 @@ import { Hero5Service } from './hero5/hero.service';
     Hero5DetailComponent,
     Hero5DashboardComponent,
     Hero5HeroesComponent,
+    Hero5NavComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
+    AppRoutingModule,
   ],
   providers: [Hero5Service],
   bootstrap: [AppComponent]

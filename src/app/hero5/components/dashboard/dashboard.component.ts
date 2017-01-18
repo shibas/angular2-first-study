@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../hero';
 import { Hero5Service } from '../../hero.service';
+import { Hero5NavComponent } from '../hero-nav/hero-nav.component';
 
 @Component({
   moduleId: module.id,
