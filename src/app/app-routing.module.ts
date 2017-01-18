@@ -8,6 +8,10 @@ import { Hero4Component } from './hero4/hero4.component';
 import { Hero5DashboardComponent } from './hero5/components/dashboard/dashboard.component';
 import { Hero5HeroesComponent } from './hero5/components/heroes/heroes.component';
 import { Hero5DetailComponent } from './hero5/components/hero-detail/hero-detail.component';
+import { Hero6DashboardComponent } from './hero6/components/dashboard/dashboard.component';
+import { Hero6HeroesComponent } from './hero6/components/heroes/heroes.component';
+import { Hero6DetailComponent } from './hero6/components/hero-detail/hero-detail.component';
+
 
 const routes: Routes = [
   {
@@ -50,6 +54,23 @@ const routes: Routes = [
   {
     path: 'hero6',
     redirectTo: 'hero6/dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'hero7/detail/:id',
+    component: Hero6DetailComponent
+  },
+  {
+    path: 'hero7/heroes',
+    component: Hero6HeroesComponent
+  },
+  {
+    path: 'hero7/dashboard',
+    component: Hero6DashboardComponent
+  },
+  {
+    path: 'hero7',
+    redirectTo: 'hero7/dashboard',
     pathMatch: 'full'
   },
 ];
