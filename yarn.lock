@@ -246,6 +246,10 @@ angular-cli@1.0.0-beta.25.5:
     yam "0.0.18"
     zone.js "^0.7.2"
 
+angular-in-memory-web-api@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.2.4.tgz#313c92545c23dbd051178185602ee16313e94a58"
+
 ansi-align@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-1.1.0.tgz#2f0c1658829739add5ebb15e6b0c6e3423f016ba"

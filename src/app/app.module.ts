@@ -22,6 +22,10 @@ import { Hero6HeroesComponent } from './hero6/components/heroes/heroes.component
 import { Hero6NavComponent } from './hero6/components/hero-nav/hero-nav.component';
 import { Hero6Service } from './hero6/hero.service';
 
+// for Simulating the web API
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './hero6/in-memory-data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,8 +47,9 @@ import { Hero6Service } from './hero6/hero.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     AppRoutingModule,
+    HttpModule,
+//    InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
   providers: [Hero5Service, Hero6Service],
   bootstrap: [AppComponent]
