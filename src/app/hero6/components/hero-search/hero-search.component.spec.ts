@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { HeroSearchComponent } from './hero-search.component';
+import { Hero6SearchComponent } from './hero-search.component';
 
-describe('HeroSearchComponent', () => {
-  let component: HeroSearchComponent;
-  let fixture: ComponentFixture<HeroSearchComponent>;
+describe('Hero6SearchComponent', () => {
+  let component: Hero6SearchComponent;
+  let fixture: ComponentFixture<Hero6SearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroSearchComponent ]
+      declarations: [ Hero6SearchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroSearchComponent);
+    fixture = TestBed.createComponent(Hero6SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

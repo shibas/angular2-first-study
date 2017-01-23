@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { HeroNavComponent } from './hero-nav.component';
+import { Hero5NavComponent } from './hero-nav.component';
 
-describe('HeroNavComponent', () => {
-  let component: HeroNavComponent;
-  let fixture: ComponentFixture<HeroNavComponent>;
+describe('Hero5NavComponent', () => {
+  let component: Hero5NavComponent;
+  let fixture: ComponentFixture<Hero5NavComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroNavComponent ]
+      declarations: [ Hero5NavComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroNavComponent);
+    fixture = TestBed.createComponent(Hero5NavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
