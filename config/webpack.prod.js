@@ -1,6 +1,5 @@
 var webpackMerge = require('webpack-merge');
 var commonConfig = require('./webpack.common');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var webpack = require('webpack');
@@ -18,9 +17,6 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
       new webpack.NoErrorsPlugin(),
       new webpack.optimize.UglifyJsPlugin({sourceMap: true, mangle: { keep_fnames: true }}),
-      new CopyWebpackPlugin([{
-        from: helpers.root('public/dist')
-      }]),
       new ExtractTextPlugin('css/[name].[hash].css'),
   ],
   devServer: {
