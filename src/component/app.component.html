@@ -1,0 +1,8 @@
+<h1>
+  {{title}}
+</h1>
+<ul>
+  <li *ngFor="let menu of menuList">
+    <a href="{{ menu.href }}">{{ menu.text }}</a>
+  </li>
+</ul>

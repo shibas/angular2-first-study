@@ -1,37 +1,35 @@
-var helpers = require('./helpers');
+var webpackMerge = require('webpack-merge');
+var commonConfig = require('./webpack.common');
 
-module.exports = {
-  devtool: 'cheap-module-source-map',
+var webpack = require('webpack');
+var path = require('path');
 
-  resolve: {
-    extensions: ['', '.ts', '.js']
-  },
+module.exports = webpackMerge(commonConfig, {
+  devtool: '#inline-source-map',
+  entry: {},
+  output: {},
 
   module: {
     loaders: [
       {
         test: /\.ts$/,
-        loaders: ['awesome-typescript-loader', 'angular2-template-loader']
-      },
-      {
-        test: /\.html$/,
-        loader: 'html'
-
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'null'
-      },
-      {
-        test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
-        loader: 'null'
-      },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw'
+        enforce: 'post',
+        include: path.resolve('src'),
+        loader: 'istanbul-instrumenter-loader',
+        exclude: [/\.spec\.ts$/, /\.e2e\.ts$/, /node_modules/]
       }
     ]
+  },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    }),
+    new ExtractTextPlugin({filename: 'css/[name].[hash].css', disable: true})
+  ],
+
+  devServer: {
+    historyApiFallback: true,
+    stats: 'minimal'
   }
-}
+});
