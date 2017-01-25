@@ -1,10 +1,10 @@
 import './polyfills.ts';
 import 'rxjs/add/operator/map';
 
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {enableProdMode} from '@angular/core';
-import {environment} from './environments/environment';
-import {AppModule} from './app.module';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
+import { environment } from './environments/environment';
+import { AppModule } from './app.module';
 
 if (environment.production) {
     enableProdMode();
