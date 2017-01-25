@@ -1,9 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {MaterialModule} from '@angular/material';
-import {NgModule, ApplicationRef, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {NgModule, ApplicationRef} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {AppComponent} from './component/app.component';
-import {MenuModule} from './modules/menu.module';
 
 @NgModule({
     declarations: [
@@ -11,12 +10,10 @@ import {MenuModule} from './modules/menu.module';
     ],
     imports: [
         BrowserModule,
-        MenuModule,
         MaterialModule.forRoot(),
         FormsModule
     ],
-    bootstrap: [AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    bootstrap: [AppComponent]
 })
 
 export class AppModule {
@@ -24,4 +21,3 @@ export class AppModule {
         appRef.bootstrap(AppComponent);
     }
 }
-
