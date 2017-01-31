@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'common-hero-nav',
+  selector: 'app-hero5-nav',
   templateUrl: './hero-nav.component.html',
   styleUrls: ['./hero-nav.component.css']
 })
