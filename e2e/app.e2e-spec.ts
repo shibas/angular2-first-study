@@ -1,4 +1,5 @@
 import { TourOfHeroesPage } from './app.po';
+import * as assert from 'power-assert';
 
 describe('tour-of-heroes App', function() {
   let page: TourOfHeroesPage;
@@ -7,8 +8,10 @@ describe('tour-of-heroes App', function() {
     page = new TourOfHeroesPage();
   });
 
-  it('should display message saying app works', () => {
+  it('TUTORIAL : TOUR OF HEROESが表示されること', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    return page.getParagraphText().then( text => {
+      assert.equal(text, 'TUTORIAL : TOUR OF HEROES');
+    });
   });
 });
