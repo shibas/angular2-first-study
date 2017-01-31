@@ -66,7 +66,4 @@ import { InMemoryDataService } from './component/hero6/in-memory-data.service';
 })
 
 export class AppModule {
-    constructor(appRef: ApplicationRef) {
-        appRef.bootstrap(AppComponent);
-    }
 }

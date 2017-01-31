@@ -15,6 +15,11 @@ import { Hero6DetailComponent } from './component/hero6/hero-detail/hero-detail.
 
 const routes: Routes = [
   {
+    path: 'public',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
+  {
     path: '',
     component: TopComponent
   },
